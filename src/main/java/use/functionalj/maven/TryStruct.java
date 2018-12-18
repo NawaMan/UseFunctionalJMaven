@@ -1,8 +1,8 @@
-package use.functionalj.gradle;
+package use.functionalj.maven;
 
 import static functionalj.list.FuncList.listOf;
-import static use.functionalj.gradle.Item.theItem;
-import static use.functionalj.gradle.Order.theOrder;
+import static use.functionalj.maven.Item.theItem;
+import static use.functionalj.maven.Order.theOrder;
 
 import java.math.BigDecimal;
 
@@ -11,6 +11,10 @@ import functionalj.annotations.Nullable;
 import functionalj.annotations.Struct;
 import functionalj.list.FuncList;
 import lombok.val;
+import use.functionalj.maven.Buyer;
+import use.functionalj.maven.Item;
+import use.functionalj.maven.Order;
+import use.functionalj.maven.SaleTax;
 
 public class TryStruct {
     
