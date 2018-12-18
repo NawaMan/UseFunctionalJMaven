@@ -2,7 +2,7 @@
 
 ![alt "Build status"](https://travis-ci.org/NawaMan/UseFunctionalJMaven.svg?branch=master)
 
-Example of how to use FunctionalJ in a Maven project.
+Example of how to use [FunctionalJ](https://github.com/NawaMan/FunctionalJ) in a Maven project.
 
 It basically boils down to adding the required maven repository (hosted by github).
 
