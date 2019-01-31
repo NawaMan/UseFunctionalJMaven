@@ -35,8 +35,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>functionalj</groupId>
-			<artifactId>functionalj-core</artifactId>
-			<version>0.1.59.0</version>
+			<artifactId>functionalj-all</artifactId>
+			<version>0.1.60.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
