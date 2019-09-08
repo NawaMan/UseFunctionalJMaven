@@ -20,23 +20,12 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<repositories>
-		<repository>
-			<id>FunctionalJ-mvn-repo</id>
-			<url>https://raw.githubusercontent.com/nawaman/nawaman-maven-repository/master/</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
-
+	
 	<dependencies>
 		<dependency>
-			<groupId>functionalj</groupId>
+			<groupId>io.functionalj</groupId>
 			<artifactId>functionalj-all</artifactId>
-			<version>0.1.73.0</version>
+			<version>0.2.1.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
