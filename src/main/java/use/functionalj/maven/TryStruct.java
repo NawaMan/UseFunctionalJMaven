@@ -12,6 +12,10 @@ import functionalj.types.Choice;
 import functionalj.types.Nullable;
 import functionalj.types.Struct;
 import lombok.val;
+import use.functionalj.maven.Buyer;
+import use.functionalj.maven.Item;
+import use.functionalj.maven.Order;
+import use.functionalj.maven.SaleTax;
 
 public class TryStruct {
     
