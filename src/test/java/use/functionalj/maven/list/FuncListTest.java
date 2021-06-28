@@ -1,5 +1,5 @@
 package use.functionalj.maven.list;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static use.functionalj.maven.list.Employee.theEmployee;
 
 import java.time.LocalDate;
@@ -8,7 +8,6 @@ import org.junit.Test;
 
 import functionalj.list.FuncList;
 import lombok.val;
-import use.functionalj.maven.list.Employee;
 
 public class FuncListTest {
 

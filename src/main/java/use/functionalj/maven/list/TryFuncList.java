@@ -7,8 +7,6 @@ import java.time.LocalDate;
 import functionalj.list.FuncList;
 import functionalj.types.Struct;
 import lombok.val;
-import use.functionalj.maven.list.Employee;
-import use.functionalj.maven.list.Item;
 
 public class TryFuncList {
     

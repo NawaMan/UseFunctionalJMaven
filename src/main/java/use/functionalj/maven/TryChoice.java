@@ -1,7 +1,7 @@
 package use.functionalj.maven;
 
 import static functionalj.function.Func.f;
-import static functionalj.stream.StreamPlus.range;
+import static functionalj.stream.intstream.IntStreamPlus.range;
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptyList;
 import static use.functionalj.maven.Tree.theTree;

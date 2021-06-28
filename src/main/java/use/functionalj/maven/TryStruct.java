@@ -12,10 +12,6 @@ import functionalj.types.Choice;
 import functionalj.types.Nullable;
 import functionalj.types.Struct;
 import lombok.val;
-import use.functionalj.maven.Buyer;
-import use.functionalj.maven.Item;
-import use.functionalj.maven.Order;
-import use.functionalj.maven.SaleTax;
 
 public class TryStruct {
     
@@ -30,7 +26,8 @@ public class TryStruct {
         default BigDecimal total() {
             val province = buyer().province();
             val total = items ()
-                    .sum   (theItem.price)
+                    .map   (theItem.price)
+                    .reduce(BigDecimal::add)
                     .map   (province::addTax)
                     .orElse(BigDecimal.ZERO);
             return total;
