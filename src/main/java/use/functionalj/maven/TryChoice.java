@@ -9,7 +9,7 @@ import java.util.ArrayList;
 //import static java.util.Collections.emptyList;
 //import static use.functionalj.maven.Tree.theTree;
 //
-//import functionalj.types.Choice;
+import functionalj.types.Choice;
 //import functionalj.types.Nullable;
 //import functionalj.types.Type;
 //import functionalj.types.choice.Self;
@@ -19,12 +19,12 @@ import java.util.ArrayList;
 
 public class TryChoice {
     
-//    @Choice
-//    interface MayBeSpec<T> {
-//        void Just(T data);
-//        void Nothing();
-//    }
-//    
+    @Choice
+    interface MayBeSpec<T> {
+        void Just(T data);
+        void Nothing();
+    }
+    
 //    @Choice
 //    interface EitherSpec<TR, TL> {
 //        void Left(TR rightData);
