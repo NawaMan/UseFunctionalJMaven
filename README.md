@@ -1,6 +1,6 @@
 # UseNullableJMaven
 
-![alt "Build status"](https://travis-ci.com/NawaMan/UseFunctionalJMaven.svg?branch=master)
+![alt "Build status"](https://github.com/NawaMan/UseFunctionalJMaven/actions/workflows/maven.yml/badge.svg)
 
 Example of how to use [FunctionalJ](https://github.com/NawaMan/FunctionalJ) in a Maven project.
 
