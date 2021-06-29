@@ -1,4 +1,7 @@
 package use.functionalj.maven;
+
+import java.util.ArrayList;
+
 //
 //import static functionalj.function.Func.f;
 //import static functionalj.stream.intstream.IntStreamPlus.range;
@@ -104,7 +107,11 @@ public class TryChoice {
 //            emptyList(), 
 //            emptyList());
 //    
-//    public static void main(String[] args) {
+    @SuppressWarnings("rawtypes")
+    public static void main(String[] args) {
+        var list = new ArrayList();
+        System.out.println(list);
+        
 //        var tree1 = Tree.Node("2", Tree.Leaf("2"), Tree.Leaf("3"));
 //        var is2 = theTree.asNode.get().value.thatEquals("2")
 //              .or(theTree.asLeaf.get().value.thatEquals("2"));
@@ -117,6 +124,6 @@ public class TryChoice {
 //        
 //        var factorial = f((Integer n) -> range(1, n + 1).reduce((a,b)->a*b).orElse(1));
 //        System.out.println(factorial.apply(5));
-//    }
-//    
+    }
+    
 }
