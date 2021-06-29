@@ -1,9 +1,9 @@
 package use.functionalk.maven;
 
 import static functionalj.function.Func.f;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import functionalj.result.Result;
 

@@ -1,11 +1,11 @@
 package use.functionalj.maven.list;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static use.functionalj.maven.list.Employee.theEmployee;
 
 import java.time.LocalDate;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import functionalj.list.FuncList;
 
