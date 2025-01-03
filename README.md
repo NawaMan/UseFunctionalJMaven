@@ -10,7 +10,7 @@ You basically need to add the required dependencies ...
 <dependency>
   <groupId>functionalj</groupId>
   <artifactId>functionalj-core</artifactId>
-  <version>1.0.17</version>
+  <version>1.0.19</version>
 </dependency>
 ```
 See the full code here: [pom.xml](https://github.com/NawaMan/UseFunctionalJMaven/blob/master/pom.xml)
