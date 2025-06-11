@@ -2,20 +2,11 @@ package use.functionalj.maven;
 
 import static functionalj.function.Func.f;
 import static functionalj.stream.intstream.IntStreamPlus.range;
-import static java.util.Arrays.asList;
-import static java.util.Collections.emptyList;
 import static use.functionalj.maven.Tree.theTree;
-
-import java.util.ArrayList;
 
 import functionalj.types.Choice;
 import functionalj.types.Nullable;
 import functionalj.types.Self;
-import functionalj.types.Serialize;
-import functionalj.types.Type;
-import functionalj.types.choice.generator.model.Case;
-import functionalj.types.choice.generator.model.CaseParam;
-import functionalj.types.choice.generator.model.SourceSpec;
 
 public class TryChoice {
     
@@ -76,44 +67,20 @@ public class TryChoice {
         void Fahrenheit(double fahrenheit);
         
         default Temperature.Fahrenheit toFahrenheit(Self self) {
-            Temperature temp = self.unwrap();
+        	var temp = (Temperature)self.unwrap();
             return temp.match()
                     .celsius   (c -> Temperature.Fahrenheit(c.celsius()*1.8 + 32.0))
                     .fahrenheit(f -> f);
         }
         default Temperature.Celsius toCelsius(Self self) {
-            Temperature temp = self.unwrap();
+            var temp = (Temperature)self.unwrap();
             return temp.match()
                     .celsius   (c -> c)
                     .fahrenheit(f -> Temperature.Celsius((f.fahrenheit() - 32.0)/1.8));
         }
     }
     
-    public static final SourceSpec spec = new SourceSpec(
-            "Command",
-            new Type("use.functionalj.gradle", "TryChoice", "CommandSpec", emptyList()),
-            "spec",
-            false,
-            null,
-            true,
-            Serialize.To.NOTHING,
-            emptyList(),
-            asList(
-                new Case("Forward", null, asList(
-                        new CaseParam("distance", new Type(null, null, "int", emptyList()), true, null))),
-                new Case("Backward", null, asList(
-                        new CaseParam("distance", new Type(null, null, "int", emptyList()), true, null))), 
-                new Case("Turn", null, asList(
-                        new CaseParam("angle", new Type(null, null, "int", emptyList()), true, null))), 
-                new Case("Explode", null, emptyList())), 
-            emptyList(), 
-            emptyList());
-    
-    @SuppressWarnings("rawtypes")
     public static void main(String[] args) {
-        var list = new ArrayList();
-        System.out.println(list);
-        
         var tree1 = Tree.Node("2", Tree.Leaf("2"), Tree.Leaf("3"));
         var is2 = theTree.asNode.get().value.thatEquals("2")
               .or(theTree.asLeaf.get().value.thatEquals("2"));
